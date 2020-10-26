@@ -1,3 +1,44 @@
+// MIT License
+
+// Copyright (c) 2020 Fraser Watt
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+// Basic usage:
+// The `particpants` parameter should be an array containing the player who chose the room at index 0, and the activator at index 1
+// Example:
+//
+//	//get room participants
+//	players = [];
+//	players[0] = player;
+//	if (isDefined(level.activ) && isAlive(level.activ))
+//		players[1] = level.activ;
+//
+// The `timer` parameter is an integer and is in seconds from 0-n
+// The timer will not activate if `0` is used
+// Example:
+//
+// timer = 0; //don't use timer
+// timer = 180; //allow the game to last for 3 minutes
+//
+// maps\utils\connect4::main(participants, timer);
+
 main(participants, timer) {
 	// 0 - Red
 	// 1 - Yellow
