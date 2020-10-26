@@ -349,7 +349,7 @@ addHud(label, x, y, alpha, alignX, alignY, fontScale, colour, cb) {
 	hud.horzAlign = alignX;
     hud.vertAlign = alignY;
 	hud.fontScale = fontScale;
-	hud.colour = colour;
+	hud.color = colour;
 	hud thread [[ cb ]]();
 
 	return hud;
@@ -357,7 +357,7 @@ addHud(label, x, y, alpha, alignX, alignY, fontScale, colour, cb) {
 
 addInfoHud(player) {
 	infoHud = spawnStruct();
-	infoHud.title = player addHud(&"Connect4", 150, -135, 1.0, "left", "bottom", 1.4, (0, 0.498039216, 1), ::destroyHudOnEnd);
+	infoHud.title = player addHud(&"Connect4", 148, -130, 1.0, "left", "bottom", 2.3, (0, 0.498039, 1), ::destroyHudOnEnd);
 	infoHud.turn = player addHud(&"^7Turn: &&1", 150, -120, 1.0, "left", "bottom", 1.4, (1, 1, 1), ::destroyHudOnEnd);
 	if (self.timer > 0) {
 		infoHud.timer = player addHud(&"Time Remaining: ^2&&1", 150, -105, 1.0, "left", "bottom", 1.4, (1, 1, 1), ::destroyHudOnEnd);
