@@ -138,7 +138,7 @@ addButtonListener(side, col) {
 				if (self.turn >= self.sides)
 					self.turn = 0;
 
-				for (i = 0; i < self.sides; i++)
+				for (i = 0; i < self.huds.size; i++)
 					updateTurnHud(i);
 			}
 		} else
@@ -394,8 +394,8 @@ startTimer(duration) {
 	while(count < self.timer) {
 		wait(1);
 		count++;
-		for (side = 0; side < self.sides; side++)
-			self.huds[side].timer setValue(self.timer - count);
+		for (i = 0; i < self.huds.size; i++)
+			self.huds[i].timer setValue(self.timer - count);
 	}
 
 	endGame();
