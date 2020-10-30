@@ -150,8 +150,6 @@
 		"stencilFunc2" "Always"
 		"stencil" "Disable"
 	}
-}
-{
 	"connect4_red" ( "material.gdf" )
 	{
 		"template" "material.template"
@@ -303,8 +301,6 @@
 		"stencilFunc2" "Always"
 		"stencil" "Disable"
 	}
-}
-{
 	"connect4_yellow" ( "material.gdf" )
 	{
 		"template" "material.template"
