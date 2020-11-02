@@ -330,7 +330,7 @@ resetListener() { //Reset disc entity positions
 
 	for (i = 0; i < self.discs.size; i++) {
 		if (isDefined(self.discs[i]["entity"])) {
-			self.discs[i]["entity"] setOrigin(self.discs[i]["origin"]);
+			self.discs[i]["entity"] moveTo(self.discs[i]["origin"], 0.1);
 			self.discs[i]["entity"] hide();
 		}
 	}
